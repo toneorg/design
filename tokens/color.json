@@ -1,0 +1,31 @@
+{
+  "color": {
+    "$type": "color",
+    "$description": "Terreno de marca. Um matiz, muitos tons: toda cor é o coral da marca movido para cima ou para baixo em luminosidade.",
+    "coral": {
+      "50": { "$value": "#fff4f2", "$description": "Blush. Fundo claro da marca e texto claro sobre vinho." },
+      "100": { "$value": "#fee9e5", "$description": "Fundo do botão discreto." },
+      "200": { "$value": "#ffd4cd", "$description": "Seleção de texto, anel de foco sobre vinho." },
+      "300": { "$value": "#ffb5aa", "$description": "Hover do botão coral." },
+      "500": {
+        "$value": "#e26b5c",
+        "$description": "O coral da marca (oklch 0.667 0.151 29). Campo de cor, nunca texto pequeno.",
+        "$extensions": { "tone": { "base": true } }
+      },
+      "600": { "$value": "#c44134", "$description": "Coral para texto pequeno sobre branco (5,1:1)." },
+      "700": { "$value": "#9e2d28", "$description": "Coral escuro: texto de ênfase e anéis sobre fundo claro." }
+    },
+    "wine": {
+      "800": { "$value": "#50171c", "$description": "Hover e estado desabilitado do botão vinho." },
+      "900": {
+        "$value": "#340b10",
+        "$description": "O vinho da marca. Cor do texto nos terrenos de marca e a única cor de texto permitida sobre coral (5,4:1).",
+        "$extensions": { "tone": { "base": true } }
+      },
+      "950": { "$value": "#210507", "$description": "Painel escuro mais profundo." }
+    },
+    "muted": { "$value": "#75595c", "$description": "Texto secundário nos terrenos de marca claros." },
+    "white": { "$value": "#ffffff" },
+    "black": { "$value": "#000000" }
+  }
+}

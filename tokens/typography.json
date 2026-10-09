@@ -1,0 +1,175 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "display": {
+        "$value": "Crimson Pro",
+        "$description": "Voz de título: serifada, grande e apertada."
+      },
+      "sans": {
+        "$value": "Host Grotesk",
+        "$description": "Texto corrido e interface."
+      }
+    },
+    "fallback": {
+      "display": {
+        "$value": [
+          "ui-serif",
+          "Georgia",
+          "serif"
+        ]
+      },
+      "sans": {
+        "$value": [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ]
+      }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "light": {
+        "$value": 300
+      },
+      "regular": {
+        "$value": 400
+      },
+      "medium": {
+        "$value": 500
+      },
+      "semibold": {
+        "$value": 600
+      }
+    }
+  },
+  "breakpoint": {
+    "wide": {
+      "$type": "dimension",
+      "$value": "48rem",
+      "$description": "A partir daqui o título perde um passo de peso."
+    }
+  },
+  "display": {
+    "$type": "typography",
+    "$description": "Títulos em Crimson Pro. O olho da letra é pequeno, então os tamanhos são maiores do que uma grotesca pediria. Leve em tela larga, onde o tamanho sustenta; um passo mais pesado no celular, onde o traço fino sumiria.",
+    "xl": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "clamp(2.75rem, 10.8vw, 9.5rem)",
+        "lineHeight": 0.94,
+        "letterSpacing": "-0.025em",
+        "fontWeight": 400,
+        "fontWeightWide": 300
+      }
+    },
+    "word": {
+      "$description": "Mesmo teto de xl com piso mais alto: para uma ou duas palavras que podem ficar enormes no celular.",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "clamp(4rem, 17vw, 9.5rem)",
+        "lineHeight": 0.94,
+        "letterSpacing": "-0.025em",
+        "fontWeight": 400,
+        "fontWeightWide": 300
+      }
+    },
+    "lg": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "clamp(2.6rem, 8vw, 6.25rem)",
+        "lineHeight": 0.98,
+        "letterSpacing": "-0.02em",
+        "fontWeight": 400,
+        "fontWeightWide": 300
+      }
+    },
+    "md": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "clamp(1.95rem, 3.8vw, 3rem)",
+        "lineHeight": 1.04,
+        "letterSpacing": "-0.015em",
+        "fontWeight": 400,
+        "fontWeightWide": 300
+      }
+    },
+    "sm": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "1.625rem",
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.01em",
+        "fontWeight": 500,
+        "fontWeightWide": 400
+      }
+    }
+  },
+  "text": {
+    "$type": "typography",
+    "$description": "Texto em Host Grotesk. Tamanho e entrelinha em px. São os tamanhos em uso nos três produtos; a entrelinha vem da escala do app, menos em body, que segue o site.",
+    "lead": {
+      "$description": "Parágrafo de abertura.",
+      "$value": {
+        "fontSize": "clamp(1.125rem, 1.6vw, 1.3125rem)",
+        "lineHeight": 1.5
+      }
+    },
+    "subheading": {
+      "$value": {
+        "fontSize": 17,
+        "lineHeight": 23,
+        "fontWeight": 600
+      }
+    },
+    "body": {
+      "$value": {
+        "fontSize": 16,
+        "lineHeight": 24,
+        "fontWeight": 400
+      }
+    },
+    "ui": {
+      "$description": "Texto de interface: rótulo de botão padrão, link, dica e erro de campo.",
+      "$value": {
+        "fontSize": 15,
+        "lineHeight": 20,
+        "fontWeight": 500
+      }
+    },
+    "small": {
+      "$value": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "fontWeight": 400
+      }
+    },
+    "caption": {
+      "$value": {
+        "fontSize": 13,
+        "lineHeight": 18,
+        "fontWeight": 400
+      }
+    },
+    "label": {
+      "$description": "Rótulo de aba. O menor texto permitido.",
+      "$value": {
+        "fontSize": 11,
+        "lineHeight": 14,
+        "fontWeight": 500
+      }
+    }
+  },
+  "logo": {
+    "$type": "typography",
+    "$description": "O logo é a palavra tone composta assim. Os arquivos em assets/logo já estão em contorno e não precisam da fonte.",
+    "wordmark": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontWeight": 500,
+        "letterSpacing": "-0.04em",
+        "textTransform": "lowercase"
+      }
+    }
+  }
+}

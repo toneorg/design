@@ -1,0 +1,20 @@
+{
+  "duration": {
+    "$type": "duration",
+    "$description": "Em ms. Resposta a toque e mudança de estado em 150; uma folha entra em 300 e sai em 150.",
+    "fast": { "$value": 150 },
+    "enter": { "$value": 300 },
+    "exit": { "$value": 150 },
+    "rise": { "$value": 400, "$description": "Entrada em sequência de um bloco de conteúdo." },
+    "stagger": { "$value": 100, "$description": "Intervalo entre um elemento e o próximo numa entrada em sequência." }
+  },
+  "easing": {
+    "$type": "cubicBezier",
+    "soft": { "$value": [0.2, 0, 0, 1], "$description": "Curva padrão de transição." }
+  },
+  "motion": {
+    "pressScale": { "$type": "number", "$value": 0.96, "$description": "Escala de um controle enquanto é pressionado." },
+    "riseDistance": { "$type": "dimension", "$value": 12, "$description": "Subida, em px, da entrada em sequência." },
+    "riseBlur": { "$type": "dimension", "$value": 4, "$description": "Desfoque inicial, em px, da entrada em sequência." }
+  }
+}

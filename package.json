@@ -1,0 +1,44 @@
+{
+  "name": "@toneorg/design",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Design system da tone: tokens, regras de uso e marca, para o site, o app e o produto para marcas",
+  "repository": "github:toneorg/design",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./theme.css": "./dist/theme.css",
+    "./theme-dark.css": "./dist/theme-dark.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens-dark.css": "./dist/tokens-dark.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./fonts/*": "./assets/fonts/*",
+    "./logo/*": "./assets/logo/svg/*",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "tone-design-check": "./bin/check.mjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "DESIGN.md",
+    "components",
+    "assets/fonts",
+    "assets/logo/svg"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

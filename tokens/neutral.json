@@ -1,0 +1,58 @@
+{
+  "neutral": {
+    "$description": "Bancada neutra: o terreno das telas em que ela compara tons de pele, cartelas e fotos de produto. Ali a única cor na tela é a pele.",
+    "light": {
+      "$type": "color",
+      "paper": { "$value": "#f3f3f2", "$description": "Fundo da página." },
+      "surface": { "$value": "#ffffff", "$description": "Cartões, campos e folhas." },
+      "sunken": { "$value": "#e9e8e6", "$description": "Preenchimento discreto atrás de imagens e dentro de painéis." },
+      "ink": { "$value": "#292420", "$description": "Texto e ação principal." },
+      "inkPressed": { "$value": "#3d3631" },
+      "inkDisabled": { "$value": "#5b534d" },
+      "onInk": { "$value": "#f3f3f2", "$description": "Texto sobre uma superfície ink." },
+      "graphite": { "$value": "#5e5a57", "$description": "Texto secundário." },
+      "rule": { "$value": "#dad9d7", "$description": "Fios e bordas de campo." },
+      "edge": { "$value": "#b9b7b4" },
+      "control": { "$value": "#8f8b87", "$description": "Contorno de controle desmarcado." },
+      "alert": { "$value": "#a8241c", "$description": "Erro." },
+      "scrim": { "$value": "rgba(41, 36, 32, 0.45)", "$description": "Véu atrás de folhas e diálogos." },
+      "imageOutline": {
+        "$value": "rgba(0, 0, 0, 0.1)",
+        "$description": "Anel de 1 px por dentro de toda imagem e amostra: preto ou branco puro, nunca tingido."
+      },
+      "raised": {
+        "$type": "shadow",
+        "$value": "0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06), 0 2px 4px 0 rgba(0, 0, 0, 0.04)",
+        "$description": "Borda de uma superfície elevada (cartão, botão de contorno, chip): um anel e um pouco de altura, em sombra, para se adaptar ao que está atrás."
+      },
+      "floating": {
+        "$type": "shadow",
+        "$value": "0 -1px 0 0 rgba(0, 0, 0, 0.05), 0 -8px 20px 0 rgba(0, 0, 0, 0.04)",
+        "$description": "Barra fixa de baixo flutuando sobre o conteúdo que rola."
+      }
+    },
+    "dark": {
+      "$type": "color",
+      "paper": { "$value": "#151413" },
+      "surface": { "$value": "#211f1d" },
+      "sunken": { "$value": "#2b2927" },
+      "ink": { "$value": "#f3f3f2" },
+      "inkPressed": { "$value": "#dad9d7" },
+      "inkDisabled": { "$value": "#8f8b87" },
+      "onInk": { "$value": "#1d1b19" },
+      "graphite": { "$value": "#aba7a3" },
+      "rule": { "$value": "#383532" },
+      "edge": { "$value": "#55514d" },
+      "control": { "$value": "#7d7975" },
+      "alert": { "$value": "#f08a80" },
+      "scrim": { "$value": "rgba(0, 0, 0, 0.6)" },
+      "imageOutline": { "$value": "rgba(255, 255, 255, 0.1)" },
+      "raised": {
+        "$type": "shadow",
+        "$value": "0 0 0 1px rgba(255, 255, 255, 0.08)",
+        "$description": "Sombra de profundidade não aparece em fundo escuro: um anel claro basta."
+      },
+      "floating": { "$type": "shadow", "$value": "0 -1px 0 0 rgba(255, 255, 255, 0.08)" }
+    }
+  }
+}

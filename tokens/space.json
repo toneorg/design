@@ -1,0 +1,77 @@
+{
+  "space": {
+    "$type": "dimension",
+    "$description": "Escala de espaço em px, base 4. No Tailwind é a escala numérica padrão (xs = 1, sm = 2, md = 3, lg = 4, xl = 5, xxl = 7, xxxl = 10).",
+    "xs": {
+      "$value": 4
+    },
+    "sm": {
+      "$value": 8
+    },
+    "md": {
+      "$value": 12
+    },
+    "lg": {
+      "$value": 16
+    },
+    "xl": {
+      "$value": 20
+    },
+    "xxl": {
+      "$value": 28
+    },
+    "xxxl": {
+      "$value": 40
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "gutter": {
+      "$value": 20,
+      "$description": "Margem lateral da tela no celular."
+    },
+    "touch": {
+      "$value": 44,
+      "$description": "Alvo de toque mínimo."
+    },
+    "controlMd": {
+      "$value": 44,
+      "$description": "Altura mínima de botão e campo no tamanho padrão."
+    },
+    "controlLg": {
+      "$value": 52,
+      "$description": "Altura mínima de botão e campo no tamanho grande."
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "$description": "Raio por papel, não por tamanho. Superfície dentro de superfície: raio de fora menos o respiro entre elas, nunca menos de 4.",
+    "full": {
+      "$value": 999,
+      "$description": "Botões e chips."
+    },
+    "tile": {
+      "$value": 32,
+      "$description": "Painel grande nos terrenos de marca."
+    },
+    "card": {
+      "$value": 28,
+      "$description": "Cartão sobre a bancada neutra e topo de folha."
+    },
+    "panel": {
+      "$value": 20,
+      "$description": "Superfície dentro de um painel ou cartão."
+    },
+    "input": {
+      "$value": 16,
+      "$description": "Campo de texto."
+    },
+    "thumb": {
+      "$value": 12
+    },
+    "tag": {
+      "$value": 8,
+      "$description": "Etiqueta estática: mais quadrada que um chip, para não parecer botão."
+    }
+  }
+}

@@ -21,7 +21,7 @@ Toda tela está em um de dois terrenos. A forma (tipografia, raio, espaço, movi
 | Quando | Site, entrada no app, telas vazias, momentos de marca | Toda tela em que ela escolhe o próprio tom, vê uma cartela, lê um veredito com amostra ou compara fotos de produto |
 | Fundo | Branco, blush (`coral-50`, `coral-100`), coral ou vinho | `paper`, com `surface` e `sunken` |
 | Texto | `wine`; secundário `muted` | `ink`; secundário `graphite` |
-| Ação principal | Botão vinho (botão coral sobre vinho) | Botão `ink` |
+| Ação principal | Botão vinho (botão coral sobre vinho) | Botão `ink` no app; botão `accent` (coral) no site |
 | Esquema escuro | Não tem | Tem (`neutral.dark`) |
 
 Para decidir: a tela mostra amostra de pele, cor de produto ou foto de produto para ela comparar? Então é bancada. Num terreno de marca, uma amostra só aparece dentro de um cartão branco ou blush, nunca encostada no coral.
@@ -69,6 +69,12 @@ Os mesmos nomes no claro e no escuro.
 | `inkPressed` | `#3d3631` | `#dad9d7` | Ação principal pressionada |
 | `inkDisabled` | `#5b534d` | `#8f8b87` | Ação principal em espera |
 | `onInk` | `#f3f3f2` | `#1d1b19` | Texto sobre `ink` |
+| `accent` | `#c54c3a` | `#e87a65` | Coral da ação no site: botão principal, marca de "sim" da tone, ponto de atenção |
+| `accentPressed` | `#ae3e2e` | `#f0907d` | Ação coral em hover e pressionada |
+| `onAccent` | `#ffffff` | `#1d1b19` | Texto sobre `accent` |
+| `accentText` | `#ae3e2e` | `#e87a65` | Coral em texto pequeno e ícone sobre `paper`, `surface` e `accentSoft` |
+| `accentSoft` | `#ffeae6` | `#3a211c` | Fundo coral claro: selo, brilho de gradiente, painel de destaque |
+| `accentOnInk` | `#e87a65` | `#ae3e2e` | Coral sobre uma superfície `ink` |
 | `graphite` | `#5e5a57` | `#aba7a3` | Texto secundário |
 | `rule` | `#dad9d7` | `#383532` | Fios e bordas de campo |
 | `edge` | `#b9b7b4` | `#55514d` | Borda mais marcada que `rule` |
@@ -78,6 +84,11 @@ Os mesmos nomes no claro e no escuro.
 | `imageOutline` | preto a 10% | branco a 10% | Anel de 1 px por dentro de toda imagem e amostra |
 | `raised` (sombra) | anel e um pouco de altura | um anel claro | Borda de superfície elevada: cartão, botão de contorno, chip |
 | `floating` (sombra) | fio e sombra para cima | um fio claro | Barra fixa de baixo sobre conteúdo que rola |
+| `glow` (sombra) | fio claro por dentro e sombra quente | o mesmo, mais fraco | Só no botão `accent` |
+
+### Coral na ação (site)
+
+No site, a bancada neutra ganha um acento: o coral `accent` (o coral da marca, escurecido até o texto branco passar). Ele é raro de propósito, e por isso guia o olho: o botão principal, as marcas de "sim" da tone, um ponto num selo e os brilhos de gradiente. Gradiente é sempre do `accentSoft` ou do `accent` para transparente, sobre `paper`, `surface` ou `ink`, montado com `color-mix` a partir dos tokens; nunca atrás de uma amostra de pele ou foto de produto. O app continua com a ação em `ink`.
 
 O anel de imagem é sempre preto ou branco puro, nunca tingido: é ele que separa uma amostra clara do fundo sem mudar a cor que ela mostra.
 

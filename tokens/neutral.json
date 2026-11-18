@@ -10,6 +10,15 @@
       "inkPressed": { "$value": "#3d3631" },
       "inkDisabled": { "$value": "#5b534d" },
       "onInk": { "$value": "#f3f3f2", "$description": "Texto sobre uma superfície ink." },
+      "accent": {
+        "$value": "#c54c3a",
+        "$description": "Coral da ação no site: o botão principal, a marca de 'sim' da tone, um ponto de atenção. Raro de propósito. Nunca encosta numa amostra de pele ou cor de produto."
+      },
+      "accentPressed": { "$value": "#ae3e2e", "$description": "Ação coral em hover e pressionada." },
+      "onAccent": { "$value": "#ffffff", "$description": "Texto sobre accent (4,7:1)." },
+      "accentText": { "$value": "#ae3e2e", "$description": "Coral em texto pequeno e ícone sobre paper, surface e accentSoft." },
+      "accentSoft": { "$value": "#ffeae6", "$description": "Fundo coral claro: selo, brilho de gradiente, painel de destaque." },
+      "accentOnInk": { "$value": "#e87a65", "$description": "Coral sobre uma superfície ink (5,4:1)." },
       "graphite": { "$value": "#5e5a57", "$description": "Texto secundário." },
       "rule": { "$value": "#dad9d7", "$description": "Fios e bordas de campo." },
       "edge": { "$value": "#b9b7b4" },
@@ -29,6 +38,11 @@
         "$type": "shadow",
         "$value": "0 -1px 0 0 rgba(0, 0, 0, 0.05), 0 -8px 20px 0 rgba(0, 0, 0, 0.04)",
         "$description": "Barra fixa de baixo flutuando sobre o conteúdo que rola."
+      },
+      "glow": {
+        "$type": "shadow",
+        "$value": "0 1px 0 0 rgba(255, 255, 255, 0.25) inset, 0 8px 24px -10px rgba(197, 76, 58, 0.55)",
+        "$description": "Brilho da ação coral: um fio claro por dentro e uma sombra quente embaixo. Só no botão accent."
       }
     },
     "dark": {
@@ -40,6 +54,12 @@
       "inkPressed": { "$value": "#dad9d7" },
       "inkDisabled": { "$value": "#8f8b87" },
       "onInk": { "$value": "#1d1b19" },
+      "accent": { "$value": "#e87a65" },
+      "accentPressed": { "$value": "#f0907d" },
+      "onAccent": { "$value": "#1d1b19" },
+      "accentText": { "$value": "#e87a65" },
+      "accentSoft": { "$value": "#3a211c" },
+      "accentOnInk": { "$value": "#ae3e2e" },
       "graphite": { "$value": "#aba7a3" },
       "rule": { "$value": "#383532" },
       "edge": { "$value": "#55514d" },
@@ -52,7 +72,8 @@
         "$value": "0 0 0 1px rgba(255, 255, 255, 0.08)",
         "$description": "Sombra de profundidade não aparece em fundo escuro: um anel claro basta."
       },
-      "floating": { "$type": "shadow", "$value": "0 -1px 0 0 rgba(255, 255, 255, 0.08)" }
+      "floating": { "$type": "shadow", "$value": "0 -1px 0 0 rgba(255, 255, 255, 0.08)" },
+      "glow": { "$type": "shadow", "$value": "0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 8px 24px -10px rgba(232, 122, 101, 0.45)" }
     }
   }
 }

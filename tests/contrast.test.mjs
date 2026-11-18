@@ -66,3 +66,17 @@ for (const scheme of ["light", "dark"]) {
     assert.ok(contrast(roles.control, roles.surface) >= LARGE);
   });
 }
+
+for (const scheme of ["light", "dark"]) {
+  test(`coral action (${scheme}): label, small coral text and coral on ink pass`, () => {
+    const roles = neutral[scheme];
+    assert.ok(contrast(roles.onAccent, roles.accent) >= TEXT);
+    assert.ok(contrast(roles.onAccent, roles.accentPressed) >= TEXT);
+    for (const ground of [roles.paper, roles.surface, roles.accentSoft]) {
+      assert.ok(contrast(roles.accentText, ground) >= TEXT);
+      assert.ok(contrast(roles.ink, ground) >= TEXT);
+    }
+    assert.ok(contrast(roles.graphite, roles.accentSoft) >= TEXT);
+    assert.ok(contrast(roles.accentOnInk, roles.ink) >= TEXT);
+  });
+}

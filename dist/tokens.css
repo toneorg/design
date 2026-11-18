@@ -21,6 +21,12 @@
   --tone-ink-pressed: #3d3631;
   --tone-ink-disabled: #5b534d;
   --tone-on-ink: #f3f3f2;
+  --tone-accent: #c54c3a;
+  --tone-accent-pressed: #ae3e2e;
+  --tone-on-accent: #ffffff;
+  --tone-accent-text: #ae3e2e;
+  --tone-accent-soft: #ffeae6;
+  --tone-accent-on-ink: #e87a65;
   --tone-graphite: #5e5a57;
   --tone-rule: #dad9d7;
   --tone-edge: #b9b7b4;
@@ -30,6 +36,7 @@
   --tone-image-outline: rgba(0, 0, 0, 0.1);
   --tone-shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.06), 0 2px 4px 0 rgba(0, 0, 0, 0.04);
   --tone-shadow-floating: 0 -1px 0 0 rgba(0, 0, 0, 0.05), 0 -8px 20px 0 rgba(0, 0, 0, 0.04);
+  --tone-shadow-glow: 0 1px 0 0 rgba(255, 255, 255, 0.25) inset, 0 8px 24px -10px rgba(197, 76, 58, 0.55);
   --tone-radius-full: 999px;
   --tone-radius-tile: 32px;
   --tone-radius-card: 28px;

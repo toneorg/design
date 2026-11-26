@@ -1,6 +1,6 @@
 {
   "neutral": {
-    "$description": "Bancada neutra: o terreno das telas em que ela compara tons de pele, cartelas e fotos de produto. Ali a única cor na tela é a pele.",
+    "$description": "Bancada neutra: o terreno das telas em que ela compara produtos, cartelas e fotos. Ali a única cor que informa é a do produto.",
     "light": {
       "$type": "color",
       "paper": { "$value": "#f3f3f2", "$description": "Fundo da página." },
@@ -12,7 +12,7 @@
       "onInk": { "$value": "#f3f3f2", "$description": "Texto sobre uma superfície ink." },
       "accent": {
         "$value": "#c54c3a",
-        "$description": "Coral da ação no site: o botão principal, a marca de 'sim' da tone, um ponto de atenção. Raro de propósito. Nunca encosta numa amostra de pele ou cor de produto."
+        "$description": "Coral da ação no site: o botão principal, a marca de 'sim' da tone, um ponto de atenção. Raro de propósito. Nunca encosta numa cor ou foto de produto."
       },
       "accentPressed": { "$value": "#ae3e2e", "$description": "Ação coral em hover e pressionada." },
       "onAccent": { "$value": "#ffffff", "$description": "Texto sobre accent (4,7:1)." },

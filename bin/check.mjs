@@ -7,7 +7,7 @@
 //
 //   include  folders or files to read
 //   allow    globs of files where a literal colour is data, not interface
-//            (skin tones, product shade ranges, icons)
+//            (product shade ranges, icons)
 //   legacy   { "file": n }: literals that were there before the move to the
 //            tokens. The number has to match: if it rises, someone wrote a new
 //            colour; if it falls, update it, so the list cannot outlive its reason.
@@ -164,7 +164,7 @@ function main() {
       [
         "",
         "Cor vem dos tokens de @toneorg/design: leia node_modules/@toneorg/design/DESIGN.md.",
-        'Se o valor é dado e não interface (tom de pele, cartela, ícone), liste o arquivo em "allow"',
+        'Se o valor é dado e não interface (cartela de produto, ícone), liste o arquivo em "allow"',
         'no tone-design.json ou marque a linha com "tone-design-ignore: <motivo>".',
       ].join("\n"),
     );

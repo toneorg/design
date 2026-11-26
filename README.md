@@ -53,7 +53,7 @@ Em cada produto:
 }
 ```
 
-`allow` são arquivos em que cor é dado (tons de pele, cartelas). `legacy` são cores literais que já existiam antes da migração, com a contagem por arquivo: o número tem de bater, então não sobe sem ninguém ver e a entrada sai quando chega a zero. Uma linha isolada pode levar `tone-design-ignore: <motivo>`.
+`allow` são arquivos em que cor é dado (cartelas de produto). `legacy` são cores literais que já existiam antes da migração, com a contagem por arquivo: o número tem de bater, então não sobe sem ninguém ver e a entrada sai quando chega a zero. Uma linha isolada pode levar `tone-design-ignore: <motivo>`.
 
 ## Mudar o sistema
 

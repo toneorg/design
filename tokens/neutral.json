@@ -6,13 +6,13 @@
       "paper": { "$value": "#f3f3f2", "$description": "Fundo da página." },
       "surface": { "$value": "#ffffff", "$description": "Cartões, campos e folhas." },
       "sunken": { "$value": "#e9e8e6", "$description": "Preenchimento discreto atrás de imagens e dentro de painéis." },
-      "ink": { "$value": "#292420", "$description": "Texto e ação principal." },
+      "ink": { "$value": "#292420", "$description": "Texto, escolha marcada e ação firme que não é a principal." },
       "inkPressed": { "$value": "#3d3631" },
       "inkDisabled": { "$value": "#5b534d" },
       "onInk": { "$value": "#f3f3f2", "$description": "Texto sobre uma superfície ink." },
       "accent": {
         "$value": "#c54c3a",
-        "$description": "Coral da ação no site: o botão principal, a marca de 'sim' da tone, um ponto de atenção. Raro de propósito. Nunca encosta numa cor ou foto de produto."
+        "$description": "Coral da ação, no site e no app: o botão principal, a marca de 'sim' da tone, o que mudou a favor dela, um ponto de atenção. Raro de propósito. Nunca encosta numa cor ou foto de produto."
       },
       "accentPressed": { "$value": "#ae3e2e", "$description": "Ação coral em hover e pressionada." },
       "onAccent": { "$value": "#ffffff", "$description": "Texto sobre accent (4,7:1)." },

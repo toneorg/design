@@ -1,6 +1,6 @@
 # Componentes
 
-Uma ficha por conceito de interface que os produtos da tone compartilham. Cada ficha é a **referência**: medidas, cores por terreno, estados e acessibilidade. A forma vem do site, que é a direção aprovada; as variantes da bancada neutra vêm do app.
+Uma ficha por conceito de interface que os produtos da tone compartilham. Cada ficha é a **referência**: medidas, cores por terreno, estados e acessibilidade. A forma vem do site, que é a direção aprovada; as variantes da bancada neutra servem ao site e ao app.
 
 Os componentes não são código compartilhado: React, React Native e Preact não dividem interface. Cada produto implementa o seu a partir da ficha e dos tokens, e lista no próprio `AGENTS.md` o que ainda faz diferente da referência. Ao mexer num componente, leve-o para a referência; se a referência não serve, mude a ficha aqui primeiro.
 

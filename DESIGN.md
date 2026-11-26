@@ -7,7 +7,7 @@ Os valores moram em `tokens/` e chegam ao produto pelos arquivos gerados em `dis
 ## Princípios
 
 1. **Um matiz, muitos tons.** Toda cor de marca é o coral movido para cima ou para baixo em luminosidade. A paleta é, literalmente, uma cartela de tons.
-2. **A única cor que informa é a pele.** Tom de pele e cor de produto são dado: aparecem só onde dizem alguma coisa, nunca como enfeite. Onde ela compara tons, o entorno é neutro, para a cor ser lida de verdade.
+2. **A cor que informa é a do produto.** Cor e foto de produto são dado: aparecem só onde dizem alguma coisa, nunca como enfeite. Onde ela compara produtos, o entorno é neutro, para a cor ser lida de verdade.
 3. **Título serifado, grande e leve; interface em grotesca.** Crimson Pro fala, Host Grotesk trabalha.
 4. **Movimento com motivo.** Uma animação mostra um estado ou uma sequência do produto. Nada se mexe só para enfeitar, e nada se mexe para quem pediu menos movimento.
 5. **Acessível por padrão.** Contraste, foco visível e alvo de toque não são etapa de revisão: já vêm nos tokens e nas fichas.
@@ -18,13 +18,13 @@ Toda tela está em um de dois terrenos. A forma (tipografia, raio, espaço, movi
 
 | | Terreno de marca | Bancada neutra |
 |---|---|---|
-| Quando | Site, entrada no app, telas vazias, momentos de marca | Toda tela em que ela escolhe o próprio tom, vê uma cartela, lê um veredito com amostra ou compara fotos de produto |
+| Quando | Site, entrada no app, telas vazias, momentos de marca | Toda tela em que ela vê uma cartela de produto, lê um veredito ou compara fotos de produto |
 | Fundo | Branco, blush (`coral-50`, `coral-100`), coral ou vinho | `paper`, com `surface` e `sunken` |
 | Texto | `wine`; secundário `muted` | `ink`; secundário `graphite` |
 | Ação principal | Botão vinho (botão coral sobre vinho) | Botão `ink` no app; botão `accent` (coral) no site |
 | Esquema escuro | Não tem | Tem (`neutral.dark`) |
 
-Para decidir: a tela mostra amostra de pele, cor de produto ou foto de produto para ela comparar? Então é bancada. Num terreno de marca, uma amostra só aparece dentro de um cartão branco ou blush, nunca encostada no coral.
+Para decidir: a tela mostra cor ou foto de produto para ela comparar? Então é bancada. Num terreno de marca, uma amostra ou foto de produto só aparece dentro de um cartão branco ou blush, nunca encostada no coral.
 
 Dentro do terreno de marca, o coral é onde a tone fala em primeira pessoa: a abertura, uma promessa, a chamada para a lista. Não é fundo de leitura longa.
 
@@ -88,13 +88,13 @@ Os mesmos nomes no claro e no escuro.
 
 ### Coral na ação (site)
 
-No site, a bancada neutra ganha um acento: o coral `accent` (o coral da marca, escurecido até o texto branco passar). Ele é raro de propósito, e por isso guia o olho: o botão principal, as marcas de "sim" da tone, um ponto num selo e os brilhos de gradiente. Gradiente é sempre do `accentSoft` ou do `accent` para transparente, sobre `paper`, `surface` ou `ink`, montado com `color-mix` a partir dos tokens; nunca atrás de uma amostra de pele ou foto de produto. O app continua com a ação em `ink`.
+No site, a bancada neutra ganha um acento: o coral `accent` (o coral da marca, escurecido até o texto branco passar). Ele é raro de propósito, e por isso guia o olho: o botão principal, as marcas de "sim" da tone, um ponto num selo e os brilhos de gradiente. Gradiente é sempre do `accentSoft` ou do `accent` para transparente, sobre `paper`, `surface` ou `ink`, montado com `color-mix` a partir dos tokens; nunca atrás de uma amostra ou foto de produto. O app continua com a ação em `ink`.
 
 O anel de imagem é sempre preto ou branco puro, nunca tingido: é ele que separa uma amostra clara do fundo sem mudar a cor que ela mostra.
 
 ### Cor que é dado
 
-Tons de pele (a escala Monk de dez tons), cores de cartela e fotos vêm de dados, não dos tokens. Ficam em arquivos próprios (`tones.ts`, `color.ts`, catálogo) e esses arquivos entram em `allow` no `tone-design.json` do produto. Toda outra cor escrita à mão faz `tone-design-check` falhar.
+Cores de cartela e fotos de produto vêm de dados, não dos tokens. Ficam em arquivos próprios (`color.ts`, catálogo) e esses arquivos entram em `allow` no `tone-design.json` do produto. Toda outra cor escrita à mão faz `tone-design-check` falhar.
 
 ## Tipografia
 
@@ -208,7 +208,7 @@ Superfície dentro de superfície: o raio de dentro é o de fora menos o respiro
 
 ## Componentes
 
-As fichas estão em [`components/`](components/README.md): botão, campo, seleção (caixa, escolha, segmentado), superfície (painel, cartão, folha), tom de pele (seletor e amostra), retorno (erro, aviso, espera, medidor) e ícone. Cada ficha é a referência; o que um produto ainda faz diferente dela está listado no `AGENTS.md` do próprio produto.
+As fichas estão em [`components/`](components/README.md): botão, campo, seleção (caixa, escolha, segmentado), superfície (painel, cartão, folha), amostra de cor de produto, retorno (erro, aviso, espera, medidor) e ícone. Cada ficha é a referência; o que um produto ainda faz diferente dela está listado no `AGENTS.md` do próprio produto.
 
 ## Como um produto recebe os tokens
 
@@ -224,7 +224,7 @@ O esquema escuro da bancada é opcional: `theme-dark.css` ou `tokens-dark.css`, 
 
 - Escrever cor à mão (hex, `rgb()`, `oklch()`) fora dos arquivos de dado.
 - Texto pequeno em coral, ou texto branco pequeno sobre coral.
-- Coral encostado numa amostra de pele ou numa cor de produto.
+- Coral encostado numa cor ou foto de produto.
 - Sombra ou anel de imagem tingido.
 - Uma terceira família tipográfica. Tela que ainda usa outra fonte troca ao ser migrada.
 - Animação sem a versão para movimento reduzido.

@@ -67,20 +67,20 @@ test("a marked line is skipped, and the next one when the mark says next-line", 
 test("glob: ** crosses folders, * stays in one", () => {
   assert.ok(globToRegExp("**/*.svg").test("src/app/icon.svg"));
   assert.ok(globToRegExp("**/*.svg").test("icon.svg"));
-  assert.ok(globToRegExp("src/lib/tones.ts").test("src/lib/tones.ts"));
+  assert.ok(globToRegExp("src/lib/cartela.ts").test("src/lib/cartela.ts"));
   assert.ok(globToRegExp("src/data/**").test("src/data/a/b.ts"));
-  assert.ok(!globToRegExp("src/*.ts").test("src/lib/tones.ts"));
-  assert.ok(!globToRegExp("src/lib/tones.ts").test("src/lib/tonesXts"));
+  assert.ok(!globToRegExp("src/*.ts").test("src/lib/cartela.ts"));
+  assert.ok(!globToRegExp("src/lib/cartela.ts").test("src/lib/cartelaXts"));
 });
 
 test("reports file, line and column, and honours allow", () => {
   const root = repo({
     "src/card.tsx": 'export const card = { color: "#292420" };\n',
-    "src/lib/tones.ts": 'export const MONK = ["#f6ede4", "#292420"];\n',
+    "src/lib/cartela.ts": 'export const CARTELA = ["#7b2f35", "#292420"];\n',
     "src/node_modules/x/y.js": 'module.exports = "#000";\n',
     "src/logo.svg": '<svg fill="#e26b5c"/>',
   });
-  const result = check({ root, config: { include: ["src"], allow: ["src/lib/tones.ts"] } });
+  const result = check({ root, config: { include: ["src"], allow: ["src/lib/cartela.ts"] } });
   assert.deepEqual(result.violations, [{ file: "src/card.tsx", line: 1, column: 31, text: "#292420" }]);
   assert.deepEqual(result.problems, []);
   assert.equal(result.scanned, 1);

@@ -10,6 +10,6 @@ Os componentes não são código compartilhado: React, React Native e Preact nã
 | [Campo](field.md) | Texto, lista, busca, rótulo, dica e erro |
 | [Seleção](selection.md) | Caixa de marcar, escolha, etiqueta, segmentado |
 | [Superfície](surface.md) | Painel, cartão, folha, barra flutuante |
-| [Tom de pele](tone.md) | Amostra e seletor de tom |
+| [Amostra](amostra.md) | Amostra de cor de produto |
 | [Retorno](feedback.md) | Erro, aviso, espera, medidor de confiança |
 | [Ícone](icon.md) | Traço, grade, tamanhos |

@@ -19,18 +19,19 @@ Pílula (`radius.full`), rótulo em Host Grotesk peso 500, numa linha só.
 
 ### Variantes na bancada neutra
 
-| Variante | Fundo | Rótulo | Desabilitado |
-|---|---|---|---|
-| `solid` | `ink` | `onInk` | fundo `rule`, rótulo `graphite` |
-| `outline` | `surface` com sombra `raised` | `ink` | opacidade 0,5 |
-| `ghost` | transparente | `ink` | opacidade 0,5 |
-| `danger` | `surface` com sombra `raised` | `alert` | opacidade 0,5 |
+| Variante | Quando | Fundo | Rótulo | Desabilitado |
+|---|---|---|---|---|
+| `accent` | A ação principal da tela, uma só: "Ver na loja", "Começar a acompanhar", "Continuar" | `accent` com sombra `glow`; pressionado `accentPressed` | `onAccent` | fundo `rule`, rótulo `graphite`, sem `glow` |
+| `solid` | Ação firme que não é a principal | `ink` | `onInk` | fundo `rule`, rótulo `graphite` |
+| `outline` | Ação secundária | `surface` com sombra `raised` | `ink` | opacidade 0,5 |
+| `ghost` | Ação discreta, ao lado de outra | transparente | `ink` | opacidade 0,5 |
+| `danger` | Apagar, sair | `surface` com sombra `raised` | `alert` | opacidade 0,5 |
 
 ### Estados
 
 - **Pressionado**: escala 0,96 em 150 ms com `easing.soft` (utilitário `press`). Com movimento reduzido, sem escala.
-- **Foco**: contorno de 2 px afastado 2 px, na cor da tabela.
-- **Em espera**: o botão fica desabilitado e diz o que está fazendo: troca o rótulo ou, na bancada, mostra um indicador sobre `inkDisabled`. O leitor de tela é avisado de que ele está ocupado.
+- **Foco**: contorno de 2 px afastado 2 px, na cor da tabela; no `accent`, `accentText`, e na bancada, `ink`.
+- **Em espera**: o botão fica desabilitado e diz o que está fazendo: troca o rótulo ou, na bancada, mostra um indicador sobre `inkDisabled` (sobre `rule` no `accent`). O leitor de tela é avisado de que ele está ocupado.
 - **Com ícone**: ícone de 20 px com traço 2, a 8 px do rótulo; o lado do ícone leva 2 px a menos de respiro.
 
 Botão só de ícone tem 44 px e nome acessível.
